@@ -1,10 +1,9 @@
-﻿using Mailjet.ConsoleApplication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ConsoleApp2
+namespace BinaryTree
 {
     public static class NodeExtensions2
     {
@@ -16,7 +15,7 @@ namespace ConsoleApp2
 
             var nextNode = Find(nextNodeData, node.Children);
 
-            while(nextNode == null && currrentParentNode != null)
+            while (nextNode == null && currrentParentNode != null)
             {
                 nextNode = Find(nextNodeData, currrentParentNode.Children.Where(x => x.Data != currentNode.Data).ToList());
                 currentNode = currrentParentNode;
@@ -46,7 +45,7 @@ namespace ConsoleApp2
 
                     nextNode = Find(value, node.Children);
 
-                    if(nextNode != null)
+                    if (nextNode != null)
                     {
                         break;
                     }

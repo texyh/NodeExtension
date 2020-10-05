@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp2\Node.csproj" />
+    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj" />
   </ItemGroup>
 
 </Project>

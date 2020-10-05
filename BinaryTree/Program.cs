@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Mailjet.ConsoleApplication
+namespace BinaryTree
 {
     class Program
     {
@@ -18,7 +18,7 @@ namespace Mailjet.ConsoleApplication
             var a = new Dictionary<string, string>();
             a.Add("2", null);
             var b = a.FirstOrDefault(x => x.Value == null);
-       
+
             a.Add(a.Count.ToString(), "ddd");
         }
     }
