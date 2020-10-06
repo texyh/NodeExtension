@@ -13,11 +13,11 @@ namespace BinaryTree
             Node currrentParentNode = node.Parent;
 
             var nextNode = node?.Children?.FirstOrDefault(x => x != null);
-
+            
             while (nextNode == null && currrentParentNode != null)
             {
                 var currentParentNodeChildren = currrentParentNode.Children;
-                var currentNodeIndex = currentParentNodeChildren.ToList().FindIndex(x => x.Data == currentNode.Data);
+                var currentNodeIndex = currentParentNodeChildren.ToList().FindIndex(x => x.GetHashCode() == currentNode.GetHashCode());
                 nextNode = currentParentNodeChildren.Skip(currentNodeIndex + 1).Take(currentParentNodeChildren.Count() - 1 - currentNodeIndex)?.FirstOrDefault();
                 currentNode = currrentParentNode;
                 currrentParentNode = currrentParentNode.Parent;

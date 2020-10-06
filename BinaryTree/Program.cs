@@ -13,13 +13,19 @@ namespace BinaryTree
     {
         static void Main(string[] args)
         {
-            int.TryParse("2", out var result);
-            Console.WriteLine(result);
-            var a = new Dictionary<string, string>();
-            a.Add("2", null);
-            var b = a.FirstOrDefault(x => x.Value == null);
+            //var root = new Node(
+            //    1,
+            //    new Node(
+            //        2, new Node(4)),
+            //    new Node(
+            //        3, new Node(5, new Node(6))));
 
-            a.Add(a.Count.ToString(), "ddd");
+            //var n = root;
+            //while (n != null)
+            //{
+            //    Console.WriteLine(n.Data);
+            //    n = n.Next();
+            //}
         }
     }
 
